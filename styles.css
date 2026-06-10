@@ -838,7 +838,7 @@ h2 {
 /* footer */
 footer {
   margin-top: 16px;
-  padding: 52px 0 44px;
+  padding: 38px 0 30px;
   text-align: center;
   background: var(--footer-bg);
   color: #FFFDF6;
@@ -858,8 +858,8 @@ footer h2 {
 
 footer p {
   color: #C7CFD6;
-  max-width: 440px;
-  margin: 0 auto 30px
+  max-width: 560px;
+  margin: 0 auto 20px
 }
 
 footer .btn {
@@ -887,7 +887,7 @@ footer .btn-sun {
 }
 
 .foot-note {
-  margin-top: 46px;
+  margin-top: 26px;
   font-family: 'Space Mono', monospace;
   font-size: 11px;
   color: #8C97A1
