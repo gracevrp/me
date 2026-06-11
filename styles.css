@@ -212,7 +212,6 @@
   }
   .ticket:nth-child(2n) .ticket-card{box-shadow:6px 6px 0 #FFE08A}
   .ticket:nth-child(3n) .ticket-card{box-shadow:6px 6px 0 #FFC9A8}
-  .ticket-card:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--sun)}
   .ticket-logo{
     width:54px;height:54px;flex-shrink:0;
     border:2.5px solid var(--ink);border-radius:13px;
@@ -268,6 +267,14 @@
     box-shadow:4px 4px 0 rgba(35,48,59,.12);
   }
   .plain-list li:last-child{margin-bottom:0}
+  .edu-main{flex:1;min-width:240px}
+  .edu-sub{font-size:14px;color:var(--soft);font-weight:500;margin-top:2px}
+  .edu-grade{
+    display:inline-block;margin-top:6px;
+    font-family:'Space Mono',monospace;font-size:11px;font-weight:700;
+    color:var(--ink);background:var(--teal-soft);
+    border:2px solid var(--ink);border-radius:6px;padding:2px 9px;
+  }
   .plain-list .meta{
     font-family:'Space Mono',monospace;font-size:12px;font-weight:700;
     color:var(--ink);background:var(--sun-soft);border-radius:8px;
@@ -342,9 +349,18 @@
   @media (max-width:640px){
     nav.menu{display:none}
     .hero{padding:34px 0 30px}
-    .hero-grid{grid-template-columns:1fr;gap:28px}
-    .avatar-wrap{width:120px}
-    .avatar{width:120px;height:120px;font-size:44px}
+    .hero-grid{grid-template-columns:auto 1fr;gap:16px;align-items:center}
+    .avatar-wrap{width:88px}
+    .avatar{width:88px;height:88px;font-size:32px;border-radius:20px;box-shadow:5px 5px 0 var(--sun)}
+    .sticker{font-size:9px;padding:4px 8px;bottom:-8px;right:-10px;box-shadow:2px 2px 0 var(--ink)}
+    .status-pill{font-size:10px;padding:4px 10px;margin-bottom:10px;box-shadow:2px 2px 0 var(--ink)}
+    h1{font-size:25px;line-height:1.15;margin-bottom:8px}
+    .hero p.lede{font-size:14px}
+    .hero-cta{margin-top:14px}
+    .info-grid{grid-template-columns:1fr 1fr;gap:10px}
+    .info-card{padding:12px 13px}
+    .info-card .k{font-size:9.5px}
+    .info-card .v{font-size:13px}
     section{padding:20px 0}
     .timeline{padding-left:28px}
     .ticket::before{left:-25.5px}
@@ -369,7 +385,6 @@
   [data-theme="dark"] .ticket-card,
   [data-theme="dark"] .ticket:nth-child(2n) .ticket-card,
   [data-theme="dark"] .ticket:nth-child(3n) .ticket-card{box-shadow:6px 6px 0 rgba(0,0,0,.35)}
-  [data-theme="dark"] .ticket-card:hover{box-shadow:9px 9px 0 rgba(0,0,0,.5)}
   [data-theme="dark"] .proj{box-shadow:5px 5px 0 rgba(0,0,0,.35)}
   [data-theme="dark"] .proj:hover{box-shadow:8px 8px 0 rgba(0,0,0,.5)}
   [data-theme="dark"] .info-card,
